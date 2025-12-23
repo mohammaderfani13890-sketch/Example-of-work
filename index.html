@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نوبتتو!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="white-page">
+        <div class="red-card">
+            <h1 class="message">🔥 نوبتت رسیده که دیده بشه! 🔥</h1>
+        </div>
+    </div>
+    
+    <script>
+        // انیمیشن کوچک برای جذابیت
+        document.addEventListener('DOMContentLoaded', function() {
+            const card = document.querySelector('.red-card');
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.8)';
+            
+            setTimeout(() => {
+                card.style.transition = 'all 0.8s ease-out';
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+            }, 300);
+        });
+    </script>
+</body>
+</html>
